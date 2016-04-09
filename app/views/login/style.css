@@ -1,0 +1,12 @@
+.login {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  input {
+    font-size: 1.2em;
+    padding: 8px 12px;
+  }
+}

@@ -1,17 +1,17 @@
 {
-  "name": "jakana-frontend",
+  "name": "ellery-frontend",
   "version": "0.0.1",
-  "description": "The Frontend for Jakana, powered by React, TypeScript, WebPack, and PostCSS Modules.",
+  "description": "The Frontend for ellery, powered by React, TypeScript, WebPack, and PostCSS Modules.",
   "author": "Alain Galvan <hi@alain.xyz>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakana/jakana-frontend"
+    "url": "https://github.com/ellery/ellery-frontend"
   },
   "scripts": {
     "test": "jest",
     "lite": "lite-server",
-    "webpack-watch": "webpack --watch",
+    "watch": "webpack --watch && lite-server",
     "webpack": "webpack"
   },
   "private": true,
@@ -32,9 +32,11 @@
   "dependencies": {
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
+    "react-motion": "^0.4.2",
     "react-redux": "^4.4.1",
     "react-router": "^2.0.1",
     "react-router-redux": "^4.0.2",
+    "recharts": "^0.9.1",
     "redux": "^3.3.1"
   }
 }

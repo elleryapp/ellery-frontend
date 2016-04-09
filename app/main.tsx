@@ -1,20 +1,18 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { browserHistory, Router, Route}  from 'react-router';
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+import { browserHistory, Router, Route}  from 'react-router'
 
-import App from './components/app'
-import Portfolio from './components/portfolio'
-import Blog from './components/blog'
-import About from './components/about'
+import './reset.css'
+import './style.css'
 
-require('./typekit');
+import {App, Login, ControlPanel, Prediction, Roadmap} from './views'
 
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
-      <Route path="/portfolio" component={Portfolio}/>
-      <Route path="/blog" component={Blog}/>
-      <Route path="/about" component={About}/>
+      <Route path="/home" component={ControlPanel}/>
+      <Route path="/prediction" component={Prediction}/>
+      <Route path="/roadmap" component={Roadmap}/>
     </Route>
   </Router>
-), document.getElementById('app'))
+), document.getElementById('app'));

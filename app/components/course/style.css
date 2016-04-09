@@ -1,0 +1,19 @@
+.course {
+  width: 800px;
+  height: 128px;
+  display: flex;
+  
+  section {
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  article {
+    flex-grow: 1;
+    display: block;
+    text-align: left;
+    padding: 8px;
+  }
+}

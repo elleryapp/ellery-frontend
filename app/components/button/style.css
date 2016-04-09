@@ -1,0 +1,22 @@
+.btn {
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 8px;
+  background-color: #2096A1;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.29));
+  background-repeat: no-repeat;
+  box-shadow: 0px 2px 0px rgba(255, 255, 255, 0.5) inset;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: box-shadow 0.3s, background-position 0.3s;
+  user-select: none;  
+  &:hover {
+      background-position: 0 1.5em;
+  }
+  &:active {
+      box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5) inset;
+  }
+}

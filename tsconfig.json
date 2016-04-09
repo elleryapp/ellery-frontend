@@ -15,7 +15,6 @@
   "filesGlob": [
     "./**/*.ts",
     "./**/*.tsx",
-    "!./jspm_packages/**/*.ts",
     "!./node_modules/**/*.ts",
     "!./typings/**/*.ts",
     "./typings/main.d.ts"
@@ -27,15 +26,18 @@
   },
   "files": [
     "./app/components/icon/icon-paths.ts",
-    "./app/components/about/index.tsx",
-    "./app/components/app/index.tsx",
-    "./app/components/background/index.tsx",
-    "./app/components/blog/blog-post.tsx",
-    "./app/components/blog/index.tsx",
+    "./app/views/index.ts",
+    "./app/components/button/index.tsx",
+    "./app/components/course/index.tsx",
     "./app/components/hero/index.tsx",
     "./app/components/icon/index.tsx",
-    "./app/components/portfolio/index.tsx",
-    "./app/components/portfolio/portfolio-item.tsx",
-    "./app/main.tsx"
+    "./app/components/input/index.tsx",
+    "./app/main.tsx",
+    "./app/views/app/index.tsx",
+    "./app/views/control-panel/index.tsx",
+    "./app/views/login/index.tsx",
+    "./app/views/prediction/index.tsx",
+    "./app/views/roadmap/index.tsx",
+    "./typings/main.d.ts"
   ]
 }

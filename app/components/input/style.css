@@ -1,0 +1,36 @@
+.input {
+    border-bottom: solid 2px #f6efe9;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 10px;
+        width: 2px;
+        background: #f6efe9;
+    }
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 10px;
+        width: 2px;
+        background: #f6efe9;
+    }
+    input {
+        color: #f6efe9;
+        padding: 8px 12px;
+        transition: padding 0.3s;
+        &:focus {
+          padding: 16px 24px;
+        }
+        &:input-placeholder {
+            color: #f6efe9;
+        }
+    }
+}

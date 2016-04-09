@@ -1,7 +1,7 @@
 import * as React from 'react'
 import IconPaths from './icon-paths'
 
-export class Icon extends React.Component<any, any> {
+class Icon extends React.Component<any, any> {
     static defaultProps = {size: 16};
     private icons:any;
     constructor(props) {
@@ -24,3 +24,5 @@ export class Icon extends React.Component<any, any> {
     );
   }
 }
+
+export default Icon;
