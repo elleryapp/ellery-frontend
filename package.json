@@ -1,0 +1,40 @@
+{
+  "name": "jakana-frontend",
+  "version": "0.0.1",
+  "description": "The Frontend for Jakana, powered by React, TypeScript, WebPack, and PostCSS Modules.",
+  "author": "Alain Galvan <hi@alain.xyz>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakana/jakana-frontend"
+  },
+  "scripts": {
+    "test": "jest",
+    "lite": "lite-server",
+    "webpack-watch": "webpack --watch",
+    "webpack": "webpack"
+  },
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "css-loader": "^0.23.1",
+    "cssnano": "^3.5.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jest": "^0.1.40",
+    "postcss-loader": "^0.8.2",
+    "precss": "^1.4.0",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.1",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.12",
+    "webpack": "^2.1.0-beta.4"
+  },
+  "dependencies": {
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-redux": "^4.4.1",
+    "react-router": "^2.0.1",
+    "react-router-redux": "^4.0.2",
+    "redux": "^3.3.1"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": false,
+    "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noEmitHelpers": false,
+    "sourceMap": true,
+    "jsx": "react"
+  },
+  "filesGlob": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "!./jspm_packages/**/*.ts",
+    "!./node_modules/**/*.ts",
+    "!./typings/**/*.ts",
+    "./typings/main.d.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": true
+  },
+  "files": [
+    "./app/components/icon/icon-paths.ts",
+    "./app/components/about/index.tsx",
+    "./app/components/app/index.tsx",
+    "./app/components/background/index.tsx",
+    "./app/components/blog/blog-post.tsx",
+    "./app/components/blog/index.tsx",
+    "./app/components/hero/index.tsx",
+    "./app/components/icon/index.tsx",
+    "./app/components/portfolio/index.tsx",
+    "./app/components/portfolio/portfolio-item.tsx",
+    "./app/main.tsx"
+  ]
+}
