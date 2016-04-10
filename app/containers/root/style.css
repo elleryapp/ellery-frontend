@@ -15,7 +15,7 @@ html, body {
     z-index: -2;
 }
 body {
-    background: url("/assets/brand/cover.jpg"), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    background: url("/assets/background.png"), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -73,8 +73,11 @@ p {
 }
 :global {
     .full {
-        width: 100%;
-        min-height: 100%;
+        width: 100vw;
+        min-height: 100vh;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

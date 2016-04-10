@@ -5,8 +5,9 @@ import {App, ControlPanel, Prediction, Roadmap} from '../views'
 
 export default(
       <Route path="/" component={App}>
-        <Route path="/home" component={requireAuthentication(ControlPanel)}/>
-        <Route path="/prediction" component={requireAuthentication(Prediction)}/>
-        <Route path="/roadmap" component={requireAuthentication(Roadmap)}/>
+        <Route path="/home" component={ControlPanel}/>
+        <Route path="/prediction" component={Prediction}/>
+        <Route path="/roadmap" component={Roadmap}/>
+        <Route path="/search" component={Roadmap}/>
       </Route>
 );

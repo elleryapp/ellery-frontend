@@ -27,7 +27,6 @@
   "files": [
     "./app/actions/index.ts",
     "./app/components/icon/icon-paths.ts",
-    "./app/constants/index.ts",
     "./app/containers/index.ts",
     "./app/reducers/auth.ts",
     "./app/reducers/data.ts",

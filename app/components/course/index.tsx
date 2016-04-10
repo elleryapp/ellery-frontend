@@ -20,13 +20,14 @@ class Course extends React.Component<any, any> {
   }
   render() {
     return (
-      <div className={style.course}>
+      <div className={style.course} style={this.props.style}>
         <section style={{backgroundColor: 'rgb(64, 233, 90)'}}>
           <h3>{this.props.data.days}</h3>
           <p>{this.props.data.hours}</p>
         </section>
+
         <section style={{backgroundImage: 'url(assets/map-placeholder.png)', backgroundSize: 'cover'}}>
-          <h3>{this.props.data.room}</h3>
+          <h3 style={{backgroundColor: 'rgba(45, 111, 168, 0.5)', width: '100%', height: '100%', textAlign: 'center', lineHeight: '128px'}}>{this.props.data.room}</h3>
         </section>
         <article>
           <h2>{this.props.data.title}</h2>

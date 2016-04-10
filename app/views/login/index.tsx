@@ -32,7 +32,8 @@ export class Login extends React.Component<any, any> {
       <div className={style.login}>
       <StaggeredMotion defaultStyles={[a, a, a]} styles={prevInterpolatedStyles => prevInterpolatedStyles.map((_, i) => {return i === 0 ? {h: spring(0)} : {h: spring(prevInterpolatedStyles[i - 1]['h'])} })}>
         {interpolatingStyles =>
-          <div>
+          <div className={style.login}>
+          <img src="/assets/brand/logo.svg" alt="logo"/>
             {interpolatingStyles.map((style, i) =>
               <div key={i} style={{opacity: (1-style.h), transform: `translateY(${64 * style.h}px)`}} >
                 {children[i]}
