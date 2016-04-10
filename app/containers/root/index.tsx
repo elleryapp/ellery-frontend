@@ -1,8 +1,7 @@
 import * as React from 'react'
 import {Provider} from 'react-redux'
-import { browserHistory  } from 'react-router'
 import routes from '../../routes'
-import {ReduxRouter} from 'redux-router'
+import { browserHistory, Router, Route} from 'react-router';
 
 import './reset.css'
 import './style.css'
@@ -13,9 +12,9 @@ export default class Root extends React.Component<any, any> {
           <div>
             <Provider store={this.props.store}>
               <div>
-                <ReduxRouter>
+               <Router history={browserHistory}>
                   {routes}
-                </ReduxRouter>
+               </Router>
               </div>
             </Provider>
           </div>

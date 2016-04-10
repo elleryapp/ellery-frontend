@@ -1,7 +1,6 @@
 import * as React from 'react'
 import {Link} from 'react-router'
 import {connect} from 'react-redux';
-import {pushState} from 'redux-router';
 import {StaggeredMotion, spring} from 'react-motion'
 
 import Input from '../../components/input'

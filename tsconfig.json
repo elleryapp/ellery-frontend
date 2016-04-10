@@ -38,7 +38,6 @@
     "./app/components/authenticated/index.tsx",
     "./app/components/button/index.tsx",
     "./app/components/course/index.tsx",
-    "./app/components/hero/index.tsx",
     "./app/components/icon/index.tsx",
     "./app/components/input/index.tsx",
     "./app/containers/app.tsx",
@@ -48,9 +47,7 @@
     "./app/store/configureStore.tsx",
     "./app/views/app/index.tsx",
     "./app/views/control-panel/index.tsx",
-    "./app/views/control-panel/ProtectedView.tsx",
     "./app/views/login/index.tsx",
-    "./app/views/login/LoginView.tsx",
     "./app/views/prediction/index.tsx",
     "./app/views/roadmap/index.tsx",
     "./typings/main.d.ts"

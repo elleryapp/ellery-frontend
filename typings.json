@@ -1,5 +1,6 @@
 {
   "ambientDependencies": {
+    "isomorphic-fetch": "registry:dt/isomorphic-fetch#0.0.0+20160316155526",
     "jest": "registry:dt/jest#0.9.0+20160319033628",
     "jwt-decode": "registry:dt/jwt-decode#1.4.0+20160317120654",
     "node": "registry:dt/node#4.0.0+20160319033040",
@@ -7,9 +8,7 @@
     "react-bootstrap": "registry:dt/react-bootstrap#0.0.0+20160322135206",
     "react-dom": "registry:dt/react-dom#0.14.0+20160316155526",
     "react-mixin": "registry:dt/react-mixin#2.0.2+20160316155526",
-    "react-motion": "registry:dt/react-motion#0.0.0+20160406115320",
-    "redux-logger": "registry:dt/redux-logger#2.6.0+20160316155526",
-    "redux-router": "registry:dt/redux-router#1.0.0+20160316155526"
+    "react-motion": "registry:dt/react-motion#0.0.0+20160406115320"
   },
   "dependencies": {
     "history": "registry:npm/history#2.0.0+20160406171533",
