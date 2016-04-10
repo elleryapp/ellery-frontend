@@ -1,9 +1,9 @@
-import React from 'react';
+import * as React from 'react';
 import {connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as actionCreators from '../actions';
+import * as actionCreators from '../../actions';
 
-export class ProtectedView extends React.Component {
+export class ProtectedView extends React.Component<any, any> {
 
     componentWillMount () {
         this.fetchData();
@@ -36,7 +36,8 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  actions : bindActionCreators(actionCreators, dispatch)
+  loginUserSuccess : bindActionCreators(actionCreators.loginUserSuccess, dispatch),
+  loginUserFailure : bindActionCreators(actionCreators.loginUserFailure, dispatch)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProtectedView);

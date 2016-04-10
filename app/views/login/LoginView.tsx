@@ -1,10 +1,10 @@
-import React from 'react/addons';
+import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import reactMixin from 'react-mixin';
-import * as actionCreators from '../actions';
+import * as reactMixin from 'react-mixin';
+import * as actionCreators from '../../actions';
 
-export class LoginView extends React.Component {
+export class LoginView extends React.Component<any, any> {
 
   constructor(props) {
     super(props);
@@ -50,7 +50,7 @@ export class LoginView extends React.Component {
   }
 }
 
-reactMixin(LoginView.prototype, React.addons.LinkedStateMixin);
+//reactMixin(LoginView.prototype, React.addons.LinkedStateMixin);
 
 const mapStateToProps = (state) => ({
   isAuthenticating   : state.auth.isAuthenticating,

@@ -4,7 +4,7 @@ import {pushState} from 'redux-router';
 
 export function requireAuthentication(Component) {
 
-    class AuthenticatedComponent extends React.Component {
+    class AuthenticatedComponent extends React.Component<any, any> {
 
         componentWillMount () {
             this.checkAuth(this.props.isAuthenticated);

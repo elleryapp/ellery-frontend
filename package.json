@@ -30,9 +30,12 @@
     "webpack": "^2.1.0-beta.4"
   },
   "dependencies": {
+    "history": "^2.0.1",
     "jwt-decode": "^2.0.1",
     "react": "^15.0.0",
+    "react-bootstrap": "^0.28.5",
     "react-dom": "^15.0.0",
+    "react-mixin": "^3.0.4",
     "react-motion": "^0.4.2",
     "react-redux": "^4.4.2",
     "react-router": "^2.0.1",

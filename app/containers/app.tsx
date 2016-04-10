@@ -1,9 +1,9 @@
-import React from 'react';
-import {Navbar, NavBrand, Nav, NavItem} from 'react-bootstrap';
-import {Link} from 'react-router';
-import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import {logoutAndRedirect} from '../actions';
+import * as React from 'react'
+import {Navbar, Nav, NavItem} from 'react-bootstrap'
+import {Link} from 'react-router'
+import {connect} from 'react-redux'
+import {bindActionCreators} from 'redux'
+import {logoutAndRedirect} from '../actions'
 
 import '../styles/core.scss';
 
@@ -12,12 +12,10 @@ import '../styles/core.scss';
      isAuthenticated: state.auth.isAuthenticated
     };
 })
-export default class CoreLayout extends React.Component {
+export default class CoreLayout extends React.Component<any, any> {
 
     render () {
-
         const {dispatch} = this.props;
-
         return (
             <div>
                 <nav className="navbar navbar-default">
@@ -45,7 +43,6 @@ export default class CoreLayout extends React.Component {
                     </div>
                 </div>
             </div>
-
         );
     }
 }

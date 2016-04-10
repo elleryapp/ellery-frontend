@@ -1,12 +1,14 @@
 import { checkHttpStatus, parseJSON } from '../utils';
-import {LOGIN_USER_REQUEST, LOGIN_USER_FAILURE, LOGIN_USER_SUCCESS, LOGOUT_USER, FETCH_PROTECTED_DATA_REQUEST, RECEIVE_PROTECTED_DATA} from '../constants';
+import CONSTANTS from '../constants';
 import { pushState } from 'redux-router';
-import jwtDecode from 'jwt-decode';
+import * as jwtDecode from 'jwt-decode';
+
+declare var fetch;
 
 export function loginUserSuccess(token) {
   localStorage.setItem('token', token);
   return {
-    type: LOGIN_USER_SUCCESS,
+    type: CONSTANTS.LOGIN_USER_SUCCESS,
     payload: {
       token: token
     }
@@ -16,7 +18,7 @@ export function loginUserSuccess(token) {
 export function loginUserFailure(error) {
   localStorage.removeItem('token');
   return {
-    type: LOGIN_USER_FAILURE,
+    type: CONSTANTS.LOGIN_USER_FAILURE,
     payload: {
       status: error.response.status,
       statusText: error.response.statusText
@@ -26,14 +28,14 @@ export function loginUserFailure(error) {
 
 export function loginUserRequest() {
   return {
-    type: LOGIN_USER_REQUEST
+    type: CONSTANTS.LOGIN_USER_REQUEST
   }
 }
 
 export function logout() {
     localStorage.removeItem('token');
     return {
-        type: LOGOUT_USER
+        type: CONSTANTS.LOGOUT_USER
     }
 }
 
@@ -80,7 +82,7 @@ export function loginUser(email, password, redirect="/") {
 
 export function receiveProtectedData(data) {
     return {
-        type: RECEIVE_PROTECTED_DATA,
+        type: CONSTANTS.RECEIVE_PROTECTED_DATA,
         payload: {
             data: data
         }
@@ -89,7 +91,7 @@ export function receiveProtectedData(data) {
 
 export function fetchProtectedDataRequest() {
   return {
-    type: FETCH_PROTECTED_DATA_REQUEST
+    type: CONSTANTS.FETCH_PROTECTED_DATA_REQUEST
   }
 }
 
