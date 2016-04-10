@@ -1,18 +1,21 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { browserHistory, Router, Route}  from 'react-router'
+import Root from './containers/Root'
+import configureStore from './store/configureStore'
+import {loginUserSuccess} from './actions'
 
 import './reset.css'
 import './style.css'
 
-import {App, Login, ControlPanel, Prediction, Roadmap} from './views'
 
-ReactDOM.render((
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <Route path="/home" component={ControlPanel}/>
-      <Route path="/prediction" component={Prediction}/>
-      <Route path="/roadmap" component={Roadmap}/>
-    </Route>
-  </Router>
-), document.getElementById('app'));
+const target = document.getElementById('app');
+const store = configureStore();
+
+const node = (<Root store={store} />);
+
+let token = localStorage.getItem('token');
+if (token !== null) {
+    store.dispatch(loginUserSuccess(token));
+}
+
+ReactDOM.render(node, target);

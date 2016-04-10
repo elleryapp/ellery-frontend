@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 128 83" style="enable-background:new 0 0 128 83;" xml:space="preserve">
-<style type="text/css">
-	.st0{clip-path:url(#SVGID_3_);fill:url(#SVGID_4_);}
-</style>
-<g>
-	<defs>
-		<path id="SVGID_1_" d="M115.5,83L51.1,18.7L12.5,57.3L0,44.8L40.4,4.4c5.9-5.9,15.6-5.9,21.5,0l66.1,66L115.5,83z"/>
-	</defs>
-	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="64" y1="83.025" x2="64" y2="-8.338866e-007">
-		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.3"/>
-		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.8"/>
-	</linearGradient>
-	<use xlink:href="#SVGID_1_"  style="overflow:visible;fill:url(#SVGID_2_);"/>
-	<clipPath id="SVGID_3_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="64" y1="83.025" x2="64" y2="-2.873094e-009">
-		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
-		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.9"/>
-	</linearGradient>
-	<rect class="st0" width="128" height="83"/>
-</g>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="233.426px" height="256px" viewBox="0 0 233.426 256" enable-background="new 0 0 233.426 256" xml:space="preserve">
+<circle fill="#56445D" cx="109.317" cy="57.503" r="24.343"/>
+<rect x="114.023" y="124.79" fill="#56445D" width="0" height="0"/>
+<circle fill="#56445D" cx="85.54" cy="106.452" r="19.999"/>
+<circle fill="#56445D" cx="137.711" cy="106.452" r="15.997"/>
+<circle fill="#56445D" cx="73.713" cy="154" r="14.999"/>
+<ellipse transform="matrix(0.9976 -0.0698 0.0698 0.9976 -10.3476 8.7943)" fill="#56445D" cx="120.713" cy="152.519" rx="17.002" ry="16.478"/>
+<ellipse transform="matrix(0.9976 -0.0698 0.0698 0.9976 -9.8843 12.4195)" fill="#56445D" cx="172.889" cy="147.74" rx="20.997" ry="21.441"/>
+<circle fill="#56445D" cx="55.427" cy="203.369" r="21.999"/>
+<circle fill="#56445D" cx="103.991" cy="200.778" r="18.277"/>
+<circle fill="#56445D" cx="152.331" cy="197.658" r="16.254"/>
+<circle fill="#56445D" cx="193.392" cy="195.709" r="13.179"/>
 </svg>

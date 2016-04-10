@@ -27,11 +27,11 @@ module.exports = {
     },
     postcss: [precss(), autoprefixer(), cssnano()],
     plugins: [
-        new ExtractTextPlugin('main.min.css'),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        })
+        new ExtractTextPlugin('main.min.css')
+        // ,new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false
+        //     }
+        // })
     ]
 };

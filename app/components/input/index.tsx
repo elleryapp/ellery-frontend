@@ -7,10 +7,19 @@ class Input extends React.Component<any, any> {
     placeholder: '',
     type: 'text'
   }
-    render() {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+  }
+
+  handleChange = (e) => {
+    this.setState({value: e.target.value});
+  }
+
+  render() {
     return (
       <div className={style.input} style={this.props.style}>
-        <input type={this.props.type} placeholder={this.props.placeholder} />
+        <input type={this.props.type} placeholder={this.props.placeholder} value={this.state.value} onChange={this.handleChange}/>
       </div>
     )
   }

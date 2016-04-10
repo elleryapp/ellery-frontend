@@ -3,7 +3,7 @@
 
 [![License][mit-image]][mit-url] [![Dependency Status][david-image]][david-url] [![devDependency Status][david-dev-image]][david-dev-url] [![peerDependency Status][david-peer-image]][david-peer-url]
 
-A default frontend example that works with the Ellery API. 
+A default frontend example that works with the Ellery API.
 
 [website-image]: assets/brand/website-screenshot.png
 [website-url]: https://ellery.alain.xyz
