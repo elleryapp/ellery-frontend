@@ -1,0 +1,19 @@
+.progress {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  article {
+    width: 66.6666%;
+  }
+  section {
+    width: 33.3333%;
+  }
+  h2, ol, ul, li {
+    padding: 8px;
+  }
+  ol {
+    list-style: decimal;
+  }
+}

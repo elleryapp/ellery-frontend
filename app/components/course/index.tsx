@@ -25,7 +25,6 @@ class Course extends React.Component<any, any> {
           <h3>{this.props.data.days}</h3>
           <p>{this.props.data.hours}</p>
         </section>
-
         <section style={{backgroundImage: 'url(assets/map-placeholder.png)', backgroundSize: 'cover'}}>
           <h3 style={{backgroundColor: 'rgba(45, 111, 168, 0.5)', width: '100%', height: '100%', textAlign: 'center', lineHeight: '128px'}}>{this.props.data.room}</h3>
         </section>
@@ -35,7 +34,7 @@ class Course extends React.Component<any, any> {
           {this.props.data.instructors.map((p, i) => {
             return (
               <div key={i} style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
-                <a href={p.url}><img style={{display: 'inline-block', width: 32, height: 32, backgroundImage: `url(${p.img})`, backgroundSize: 'cover', borderRadius: '100%', border: '1px solid #fff'}}/> {p.name}</a>
+                <a href={p.url}><img style={{display: 'inline-block', width: 32, height: 32, backgroundImage: `url(${p.img})`, backgroundSize: 'cover', borderRadius: '100%', border: '1px solid #fff'}}/> {p.name} {this.props.rating}</a>
                 <a href={'tel:'+p.phone}><Icon type='phone'/> {p.phone}</a>
                 <a href={'mailto:'+p.email}><Icon type='email'/> {p.email}</a>
               </div>

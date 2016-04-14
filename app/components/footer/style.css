@@ -28,10 +28,8 @@
         padding: 8px 12px;
         transition: padding 0.3s;
         font-weight: 300;
-        font-family: 'Roboto', sans-serif;
         &:focus {
             padding: 16px 24px;
-            outline: none;
             & + label {
                 transform: translate(-125%, -8px);
                 opacity: 0.5;

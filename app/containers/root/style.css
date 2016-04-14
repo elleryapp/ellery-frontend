@@ -9,19 +9,31 @@ html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     color: #fff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     z-index: -2;
 }
 body {
-    background: url("/assets/background.png"), linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
+    animation: myfiu-back 30s linear infinite;
+}
+
+@keyframes myfiu-back {
+  0% {
+      background-color: #5e77bb;
+  }
+  50% {
+      background-color: #45d5da;
+  }
+  100% {
+      background-color: #5e77bb;
+  }
 }
 input {
     border: 0 none;

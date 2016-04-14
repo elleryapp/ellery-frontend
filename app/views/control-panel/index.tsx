@@ -2,6 +2,7 @@ import * as React from 'react'
 import Course from '../../components/course'
 import {StaggeredMotion, spring} from 'react-motion'
 import Input from '../../components/input'
+import Alerts from '../../components/alerts'
 import {Link} from 'react-router'
 
 var style = require('./style.css');
