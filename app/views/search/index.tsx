@@ -63,8 +63,6 @@ const data = [
   { name: 'W',  uv: 16, amt: 100  }
 ];
 
-// <img src="/assets/progress-placeholder.svg" alt="roadmap"/>
-
 export class Search extends React.Component<any, any> {
     render() {
     return (

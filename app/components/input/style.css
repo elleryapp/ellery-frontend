@@ -32,23 +32,16 @@
         &:focus {
             padding: 16px 24px;
             outline: none;
-            & + label {
-                transform: translate(-125%, -8px);
-                opacity: 0.5;
-            }
         }
-        & + label {
-            user-select: none;
-            opacity: 0.5;
-            z-index: -2;
-            position: absolute;
-            transform: translate(0px, 0px);
-            left: 10%;
-            top: 50%;
-            transition: transform 0.3s, opacity 0.3s;
-        }
-        &[value=""] + label {
-          opacity: 0.5;
-        }
+    }
+    label {
+        user-select: none;
+        opacity: 0.5;
+        z-index: -2;
+        position: absolute;
+        transform: translate(0px, 0px);
+        left: 10%;
+        top: 50%;
+        transition: transform 0.3s, opacity 0.3s;
     }
 }

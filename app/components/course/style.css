@@ -2,7 +2,11 @@
   width: 800px;
   height: 128px;
   display: flex;
-  
+  cursor: default;
+  h1, h2, h3, p {
+    padding: 6px 0;
+    cursor: default;
+  }
   section {
     width: 128px;
     display: flex;

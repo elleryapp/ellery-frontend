@@ -5,7 +5,8 @@ var style = require('./style.css');
 class Input extends React.Component<any, any> {
   static defaultProps = {
     placeholder: '',
-    type: 'text'
+    type: 'text',
+    move: true
   }
   constructor(props) {
     super(props);
@@ -26,10 +27,15 @@ class Input extends React.Component<any, any> {
     this.setState(s);
   }
   render() {
+    var labelStyle = {
+      opacity: (this.state.value === '' || this.state.focused) ? 1 : 0,
+      transform: (this.state.value !== '') ? 'translate(-125%, -8px)' :'translate(0px, 0px)'
+    };
+
     return (
       <div className={style.input} >
         <input type={this.props.type} value={this.state.value} onChange={this.handleChange} onFocus={this.handleFocus} onBlur={this.handleBlur} style={this.props.style}/>
-        <label style={{opacity: (this.state.value === '' || this.state.focused) ? 1 : 0}}>{this.props.placeholder}</label>
+        <label style={labelStyle}>{this.props.placeholder}</label>
         {this.props.children}
       </div>
     )
