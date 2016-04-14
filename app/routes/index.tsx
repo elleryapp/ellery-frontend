@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {Route, IndexRoute} from 'react-router'
 import {requireAuthentication} from '../components/authenticated'
-import {App, ControlPanel, Progress, Roadmap} from '../views'
+import {App, ControlPanel, Progress, Search} from '../views'
 
 export default(
       <Route path="/" component={App}>

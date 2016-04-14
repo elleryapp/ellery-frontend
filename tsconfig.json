@@ -41,8 +41,10 @@
     "./app/components/footer/index.tsx",
     "./app/components/icon/index.tsx",
     "./app/components/input/index.tsx",
+    "./app/components/modal/index.tsx",
     "./app/components/sidebar-content/index.tsx",
     "./app/components/sidebar/index.tsx",
+    "./app/components/tooltip/index.tsx",
     "./app/containers/app.tsx",
     "./app/containers/root/index.tsx",
     "./app/main.tsx",
@@ -50,9 +52,10 @@
     "./app/store/configureStore.tsx",
     "./app/views/app/index.tsx",
     "./app/views/control-panel/index.tsx",
+    "./app/views/enroll/index.tsx",
     "./app/views/login/index.tsx",
     "./app/views/progress/index.tsx",
-    "./app/views/roadmap/index.tsx",
+    "./app/views/search/index.tsx",
     "./typings/main.d.ts"
   ]
 }

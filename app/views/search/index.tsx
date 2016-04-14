@@ -47,26 +47,25 @@ var p =  [{
 }];
 
 const data = [
-    { name: 'A+', uv: 1, amt: 100 },
+  { name: 'A+', uv: 1, amt: 100 },
   { name: 'A', uv: 17, amt: 100 },
-    { name: 'A-', uv: 2, amt: 100 },
-      { name: 'B+', uv: 2, amt: 100 },
+  { name: 'A-', uv: 2, amt: 100 },
+  { name: 'B+', uv: 2, amt: 100 },
   { name: 'B', uv: 8, amt: 100  },
-    { name: 'B-',  uv: 2, amt: 100  },
+  { name: 'B-',  uv: 2, amt: 100  },
   { name: 'C+',  uv: 2, amt: 100  },
-    { name: 'C',  uv: 14, amt: 100  },
-      { name: 'C-',  uv: 1, amt: 100  },
-        { name: 'D+',  uv: 1, amt: 100  },
+  { name: 'C',  uv: 14, amt: 100  },
+  { name: 'C-',  uv: 1, amt: 100  },
+  { name: 'D+',  uv: 1, amt: 100  },
   { name: 'D',  uv: 26, amt: 100  },
   { name: 'D-',  uv: 1, amt: 100  },
   { name: 'F',  uv: 10, amt: 100  },
-  { name: 'W',  uv: 16, amt: 100  },
-
+  { name: 'W',  uv: 16, amt: 100  }
 ];
 
 // <img src="/assets/progress-placeholder.svg" alt="roadmap"/>
 
-export class Roadmap extends React.Component<any, any> {
+export class Search extends React.Component<any, any> {
     render() {
     return (
       <div className='full'>
